@@ -1,0 +1,216 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Arial,sans-serif;
+    background-color: #D5D8DC ;
+}
+
+a{
+    text-decoration: none;
+}
+header a:visited {
+    color: #ffffff;
+}
+
+/*
+a:link{
+    color: #ffffff;
+}
+a:visited {
+  color:#ffffff;
+  
+}
+a:hover {
+  color:#000000;
+}
+a:active {
+  color:#ffffff;
+}
+*/
+header{
+    text-align: center;
+    background-color: #042b70;
+    color: #ffffff;
+    height: 10%;
+    padding: 20px;
+}
+
+main{
+    background-color: #042b70;
+    color: #093c98;
+    width: 90%;
+    height: 600px;
+    margin:  20px auto;
+    padding-top: 60px;
+    
+}
+
+p img{
+    margin-bottom: 20px;
+    background-color: #093c9b; 
+    vertical-align: middle;
+    border-radius:3px 0px 0px 3px;
+}
+
+input{
+    vertical-align: middle;    
+    height: 30px;
+    width: 70%;
+    margin-bottom:20px ;
+    border: 1px solid #b2b2b2;
+    border-radius:0px 3px 3px 0px;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    transition: all 0.2s linear;
+}
+input[type="submit"]{
+    background-color: #042b70;
+    color: #ffffff;
+    font-size: 20px;
+}
+input[type="submit"]:hover{
+    background: #081964;
+}
+
+.sombra{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.box,.box2{
+   background-color: #ffffff;
+   text-align: center;
+   float: left; 
+   width: 40%;
+   padding: 15px 20px 20px 15px;
+   border-radius: 5px;
+   margin-left: 7%;
+   margin-bottom: 10px;
+}
+
+.box2 h4{
+   padding-left: 5px;
+   margin-top: 30px; 
+   margin-bottom: 90px;
+}
+.clear{
+    clear: both;
+}
+
+/*modal*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+}
+.modal input, select{
+    margin: 2%;
+    box-sizing: border-box;
+    background-color: #e3e6ee ;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 5px auto 40px auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.container label{
+    display: block;    
+}
+.modal input{
+    width: 95%;
+    padding: 15px 20px;
+    display: inline-block;  
+    
+}
+.icon-cadastro h1{
+    padding: 15px;
+}
+.icon-cadastro p{
+    width: 100%;
+    background-color: #093c9b;
+    text-align: center;
+}
+.modal input[type="date"]{
+    width: 200px;
+}
+.modal form{
+    border: 3px solid #f1f1f1;
+}
+.modal label{
+    margin: 15px 0 3px 15px;
+}
+.icon-cadastro{
+    background: #042b70;
+    color: #ffffff;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+    0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.modal select{
+    padding: 5px 20px;
+    width:250px;           
+    font-size:18px;   
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+ 
+
+
+.cancelar, .cadastro{
+    width: 20%;
+    padding: 14px 20px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer; 
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px; 
+    transition: all 0.2s linear; 
+}
+.cancelar{
+    margin-right:220px ;
+    background-color: red;
+    float: left;
+}
+.cadastro{
+    background-color: #093c9b;
+    float: right;
+}
+
+.cadastro button:hover{
+    background: #081964;  
+}
+
+/*animacao do modal*/
+.animacao{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+
+
+
